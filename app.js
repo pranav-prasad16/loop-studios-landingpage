@@ -2,7 +2,7 @@
 const navContent = document.getElementById("nav")
 console.log(nav)
 navContent.innerHTML = `    
-    <div id="nav-bar">
+    <div class="nav-bar">
         <ul>
             <li><h2>loopstudios</h2></li>
             <li class="navbar-child">About</li>
@@ -13,7 +13,7 @@ navContent.innerHTML = `
         </ul>
     </div>
     <div id="heading">IMMERSIVE EXPERIENCES THAT DELIVER</div>
-`
+    `
 
 const headerContent = document.getElementById("header");
 const headerContentDiv = document.createElement("div");
@@ -185,7 +185,7 @@ const footerHeading = document.createElement("div");
 const footerContent = document.createElement("div");
 
 footerHeading.setAttribute("class", "footer-heading")
-footerContent.setAttribute("class", "footer-content")
+footerContent.setAttribute("class", "footer-content nav-bar")
 
 const facebookIcon = new Image(20, 20);
 facebookIcon.src = "images/icon-facebook.svg"
@@ -205,9 +205,22 @@ instagramIcon.setAttribute("class", "footer-icon")
 
 footerHeading.innerHTML =`
     <h2>loopstudios</h2>
-`
+    `
 footerHeading.appendChild(facebookIcon)
 footerHeading.appendChild(twitterIcon)
 footerHeading.appendChild(pinterestIcon)
 footerHeading.appendChild(instagramIcon)
+
+footerContent.innerHTML = `
+        <ul>
+            <li class="navbar-child">About</li>
+            <li class="navbar-child">Careers</li>
+            <li class="navbar-child">Events</li>
+            <li class="navbar-child">Products</li>
+            <li class="navbar-child">Support</li>
+            <li>© 2021 Loopstudios. All rights reserved.</li>
+        </ul>
+`
+
 footer.appendChild(footerHeading)
+footer.appendChild(footerContent)
