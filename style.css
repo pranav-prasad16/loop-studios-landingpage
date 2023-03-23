@@ -137,7 +137,7 @@ button:hover{
 }
 
 
-#home-images-flex{
+.home-images-flex{
     display: grid;
     /* flex-wrap: wrap;
     align-items: center;
@@ -149,14 +149,28 @@ button:hover{
     padding-right: 34px;
     grid-gap: 3rem;
 }
-
+/* 
 .home-content-heading{
     position: absolute;
-    /* display: flex; */
+    display: inline-flex;
     justify-content: space-around;
     color: white;
     padding-top: 350px;
     border: 2px solid red;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 2px;
+} */
+
+.home-content-heading{
+    position: relative;
+    left: 0px;
+    /* display: inline-flex; */
+    /* justify-content: space-around; */
+    color: black;
+    /* padding-top: 350px; */
+    /* border: 2px solid red; */
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
     line-height: 100%;
