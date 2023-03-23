@@ -86,7 +86,7 @@ for (let index = 0; index < 8; index++) {
 console.log(homeContentArray)
 
 const homeImages = document.createElement("div");
-homeImages.setAttribute("class", "home-images-flex")
+homeImages.setAttribute("class", "home-images-grid")
 const homeImage1 = new Image(220, 400);
 const homeImage2 = new Image(220, 400);
 const homeImage3 = new Image(220, 400);
@@ -179,3 +179,35 @@ homeImages.appendChild(homeSection8)
 // homeImages.appendChild(homeImage8)
 home.appendChild(homeTitle)
 home.appendChild(homeImages)
+
+const footer = document.querySelector("#foot");
+const footerHeading = document.createElement("div");
+const footerContent = document.createElement("div");
+
+footerHeading.setAttribute("class", "footer-heading")
+footerContent.setAttribute("class", "footer-content")
+
+const facebookIcon = new Image(20, 20);
+facebookIcon.src = "images/icon-facebook.svg"
+facebookIcon.setAttribute("class", "footer-icon")
+
+const twitterIcon = new Image(20, 20);
+twitterIcon.src = "images/icon-twitter.svg"
+twitterIcon.setAttribute("class", "footer-icon")
+
+const pinterestIcon = new Image(20, 20);
+pinterestIcon.src = "images/icon-pinterest.svg"
+pinterestIcon.setAttribute("class", "footer-icon")
+
+const instagramIcon = new Image(20, 20);
+instagramIcon.src = "images/icon-instagram.svg"
+instagramIcon.setAttribute("class", "footer-icon")
+
+footerHeading.innerHTML =`
+    <h2>loopstudios</h2>
+`
+footerHeading.appendChild(facebookIcon)
+footerHeading.appendChild(twitterIcon)
+footerHeading.appendChild(pinterestIcon)
+footerHeading.appendChild(instagramIcon)
+footer.appendChild(footerHeading)
